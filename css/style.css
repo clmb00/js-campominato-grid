@@ -102,7 +102,7 @@ main{
 }
 
 .box:hover{
-  background-color: #d4ddb6;
+  background-color: #ccd5ae72;
   transform: scale(.95);
 }
 
