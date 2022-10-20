@@ -24,5 +24,11 @@ function createCell(numberRows, index){
   box.style.width = 'calc(100% / ' + numberRows + ')';
   box.style.height = 'calc(100% / ' + numberRows + ')';
   box.innerHTML = index;
+  box.addEventListener('click', clickedBox);
   return box;
+}
+
+function clickedBox(){
+  console.log(this.innerHTML);
+  this.classList.add('active');
 }

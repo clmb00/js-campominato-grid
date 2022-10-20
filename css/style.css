@@ -90,6 +90,7 @@ main{
 }
 
 .box{
+  cursor: pointer;
   border: 2px solid #ccd5ae;
   display: flex;
   justify-content: center;
@@ -100,4 +101,5 @@ main{
 
 .box.active{
   background-color: #ccd5ae;
+  border-color: #a6ad8e;
 }
