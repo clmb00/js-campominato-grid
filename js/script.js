@@ -10,11 +10,9 @@ playButton.addEventListener('click', function(){
 })
 
 function createGrid(numberRows){
-
   for(let i = 0; i < Math.pow(numberRows, 2); i++){
     container.append(createCell(numberRows, i+1));
   }
-
 }
 
 function createCell(numberRows, index){

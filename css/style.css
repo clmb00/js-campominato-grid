@@ -97,6 +97,17 @@ main{
   align-items: center;
   font-size: 1.2rem;
   font-weight: bold;
+  transition: backgroung-color .5s ease;
+  transition: transform .25s ease;
+}
+
+.box:hover{
+  background-color: #d4ddb6;
+  transform: scale(.95);
+}
+
+.box:active{
+  transform: scale(.85);
 }
 
 .box.active{
