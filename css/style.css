@@ -14,23 +14,30 @@ header, footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
   padding: 20px 40px;
   background-color: #d4a373;
 }
 
+header{
+  height: 80px;
+}
+
+footer{
+  height: 60px;
+}
+
 h1{
-  font-size: 4rem;
+  font-size: 3.6rem;
   color: #fefae0;
 }
 
 .controls{
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .controls select{
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   height: 40px;
   width: 200px;
   padding-left: 10px;
@@ -44,7 +51,7 @@ h1{
 }
 
 .controls button{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   height: 40px;
   padding: 0px 15px;
   background-color: #fefae0;
@@ -63,12 +70,34 @@ h1{
 }
 
 footer span{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+}
+
+main{
+  width: 100%;
+  height: calc(100vh - 140px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main_container{
-  height: calc(100vh - 240px);
-  max-width: 800px;
-  margin: 20px auto;
-  background-color: blue;
+  width: 40%;
+  aspect-ratio: 1/1;
+  max-height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box{
+  border: 2px solid #ccd5ae;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.box.active{
+  background-color: #ccd5ae;
 }
