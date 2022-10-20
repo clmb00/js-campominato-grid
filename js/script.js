@@ -1,12 +1,11 @@
 const container = document.querySelector('.main_container');
-const numberRows = 10;
+const numberRows = [5, 7, 9, 10, 12];
 const playButton = document.querySelector('header button');
 
 playButton.addEventListener('click', function(){
   container.innerHTML = ""
   const difficulty = document.querySelector('header select').value;
-  console.log(difficulty);
-  createGrid(numberRows);
+  createGrid(numberRows[difficulty]);
   playButton.innerHTML = "New game"
 })
 
